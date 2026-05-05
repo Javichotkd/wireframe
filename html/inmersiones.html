@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+<section id="3d" class="section carousel3d">
+  <span class="section__label">Galeria</span>
+  <h2 class="reveal" data-delay="0">Nuestros eventos en perspectiva</h2>
+  <div class="c3d" role="region" aria-label=" de imagenes 3D" aria-roledescription="carousel">
+    <div class="c3d__viewport">
+      <div class="c3d__track" id="c3dTrack" data-images="img/cabezos-mapa-355x238.jpg,img/cabomenor-mapa-355x238.jpg,img/marina-mapa-355x238.jpg,img/mouro-mapa-inmersiones-355x238.jpg,img/palacio-mapa-355x238.jpg,img/pecios-mapa-355x238.jpg"></div>
+    </div>
+    <button class="c3d__arrow c3d__arrow--prev" id="c3dPrev" aria-label="Imagen anterior">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M13 4L7 10L13 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="c3d__arrow c3d__arrow--next" id="c3dNext" aria-label="Imagen siguiente">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="c3d__dots" id="c3dDots"></div>
+    <div class="c3d__counter" id="c3dCounter" aria-live="polite"></div>
+  </div>
+</section>
+</html>
+<link rel="stylesheet" href="../js/script.js">
