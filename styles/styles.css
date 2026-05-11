@@ -170,3 +170,14 @@
   color: var(--orange-main);
   text-shadow: 0 0 10px var(--glow);
 }
+
+.footer-custom {
+    background-color: #f8f9fa; /* gris suave */
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px; /* opcional: redondeado */
+}
