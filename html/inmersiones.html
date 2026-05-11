@@ -1,13 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inmersiones</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inmersiones</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  
+  <!-- =========================
+     BOOTSTRAP CSS
+========================= -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- TU CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <!-- =========================
+     CARRUSEL UBICACIONES BUCEO
+========================= -->
+
+  <div id="divingHeroCarousel" class="carousel slide ubicaciones-buceo-carousel carousel-fade" data-bs-ride="carousel">
+
+    <!-- Indicadores -->
+    <div class="carousel-indicators ubicaciones-buceo-indicators">
+
+      <button type="button" data-bs-target="#divingHeroCarousel" data-bs-slide-to="0" class="active"></button>
+
+      <button type="button" data-bs-target="#divingHeroCarousel" data-bs-slide-to="1"></button>
+
+      <button type="button" data-bs-target="#divingHeroCarousel" data-bs-slide-to="2"></button>
+
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+
+        <img src="..\img\inmersiones\islaMouro\foto.jpg" class="d-block w-100 ubicaciones-buceo-image" alt="Maldivas">
+
+        <div class="ubicaciones-buceo-overlay"></div>
+
+        <div class="carousel-caption ubicaciones-buceo-caption">
+
+          <span class="ubicaciones-buceo-subtitle">
+            DESTINO PREMIUM
+          </span>
+
+          <h2 class="ubicaciones-buceo-title">
+            ISLA MOURO
+          </h2>
+
+          <p class="ubicaciones-buceo-description">
+            Descubre arrecifes paradisíacos, aguas cristalinas y
+            encuentros únicos con mantarrayas y tiburones.
+          </p>
+
+          <a href="isla-mouro.html" class="btn ubicaciones-buceo-button">
+            MÁS INFORMACIÓN
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+
+        <img src="..\img\inmersiones\elPalacio\foto.webp" class="d-block w-100 ubicaciones-buceo-image" alt="Gran Barrera de Coral">
+
+        <div class="ubicaciones-buceo-overlay"></div>
+
+        <div class="carousel-caption ubicaciones-buceo-caption">
+
+          <span class="ubicaciones-buceo-subtitle">
+            EXPERIENCIA ÚNICA
+          </span>
+
+          <h2 class="ubicaciones-buceo-title">
+            EL PALACIO
+          </h2>
+
+          <p class="ubicaciones-buceo-description">
+            Explora el mayor ecosistema coralino del planeta y
+            disfruta de una biodiversidad impresionante.
+          </p>
+
+          <a href="el-palacio.html" class="btn ubicaciones-buceo-button">
+            MÁS INFORMACIÓN
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+
+        <img src="..\img\inmersiones\cabosYCabezos\foto.jpg" class="d-block w-100 ubicaciones-buceo-image" alt="Cenotes">
+
+        <div class="ubicaciones-buceo-overlay"></div>
+
+        <div class="carousel-caption ubicaciones-buceo-caption">
+
+          <span class="ubicaciones-buceo-subtitle">
+            AVENTURA SUBMARINA
+          </span>
+
+          <h2 class="ubicaciones-buceo-title">
+            CABOS Y CABEZOS
+          </h2>
+
+          <p class="ubicaciones-buceo-description">
+            Sumérgete en cuevas submarinas con aguas transparentes
+            y paisajes naturales espectaculares.
+          </p>
+
+          <a href="cabos-y-cabezos.html" class="btn ubicaciones-buceo-button">
+            MÁS INFORMACIÓN
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Flecha izquierda -->
+    <button class="carousel-control-prev ubicaciones-buceo-control" type="button" data-bs-target="#divingHeroCarousel"
+      data-bs-slide="prev">
+
+      <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+    <!-- Flecha derecha -->
+    <button class="carousel-control-next ubicaciones-buceo-control" type="button" data-bs-target="#divingHeroCarousel"
+      data-bs-slide="next">
+
+      <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+  </div>
+
+
+  <!-- =========================
+     BOOTSTRAP JS
+========================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+  <!-- Carrusel 3D 
 <section id="carrusel3d" class="section carousel3d">
   <span class="section__label"></span>
   <h2 class="reveal is-visible" data-delay="0">Nuestros eventos en perspectiva</h2>
@@ -45,9 +193,9 @@
   </div>
 </section>
 
-<!-- CARGA CORRECTA DEL SCRIPT -->
-<script src="../js/script.js"></script>
+CARGA CORRECTA DEL SCRIPT 
+<script src="../js/script.js"></script> -->
 
 </body>
-</html>
 
+</html>
