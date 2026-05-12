@@ -185,192 +185,120 @@
     border-radius: 8px; /* opcional: redondeado */
 }
 
-/* =========================
-   CARRUSEL UBICACIONES DE BUCEO
-========================= */
+/*CARRUSEL*/
 
-.ubicaciones-buceo-carousel {
-    width: 95%;
-    height: 90vh;
-    margin: 40px auto;
-    border-radius: 30px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
-}
-
-/* =========================
-   SLIDES
-========================= */
-
-.ubicaciones-buceo-carousel .carousel-item {
-    height: 90vh;
-    position: relative;
-}
-
-.ubicaciones-buceo-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* =========================
-   OVERLAY OSCURO
-========================= */
-
-.ubicaciones-buceo-overlay {
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(
-            to right,
-            rgba(102, 101, 101, 0.65),
-            rgba(84, 83, 83, 0.25)
-        );
-    z-index: 1;
-}
-
-/* =========================
-   CONTENIDO
-========================= */
-
-.ubicaciones-buceo-caption {
-    position: absolute;
-    z-index: 2;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: left;
-    max-width: 650px;
-    right: auto;
-    bottom: auto;
-}
-
-.ubicaciones-buceo-subtitle {
-    display: inline-block;
-    margin-bottom: 15px;
-    font-size: 0.9rem;
+/*TÍTULOS DE LA PÁGINA*/
+.page-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     letter-spacing: 2px;
-    font-weight: 700;
-    color: #ffffffcc;
 }
 
-.ubicaciones-buceo-title {
-    font-size: 5rem;
-    font-weight: 800;
-    line-height: 0.95;
+.subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-ubi {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.307);
+}
+
+.carousel-inner {
+    border-radius: 15px;
+    background-color: rgba(189, 188, 188, 0.478);
+    backdrop-filter: blur(10px);
+}
+
+.carouselitem {
+    padding: 40px 20px;
+    min-height: 550px;
+}
+
+/*CONTENEDOR DE CARTA*/
+.ubi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*IMAGEN DE LA CARTA*/
+.ubi-imagen {
+    max-width: 280px;
+    max-height: 380px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
     margin-bottom: 25px;
-    color: white;
-    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
-.ubicaciones-buceo-description {
-    font-size: 1.3rem;
-    line-height: 1.7;
-    color: rgba(255,255,255,0.92);
-    margin-bottom: 35px;
+.ubi-imagen:hover {
+    transform: scale(1.05);
+}
+
+/*INFORMACIÓN DE LA CARTA*/
+.ubi-info {
+    color: white;
+}
+
+.ubi-numero {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.ubi-nombre {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
+}
+
+.ubi-descripcion {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    line-height: 1.6;
     max-width: 600px;
+    font-style: italic;
 }
 
-/* =========================
-   BOTÓN
-========================= */
+/*CONTROLES DEL CARRUSEL*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    padding: 15px;
+}
 
-.ubicaciones-buceo-button {
-    background-color: #ff7f7f;
-    color: white;
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*INDICADORES DEL CARRUSEL*/
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
     border: none;
-    padding: 16px 38px;
-    border-radius: 6px;
-    font-weight: 700;
-    letter-spacing: 1px;
     transition: all 0.3s ease;
 }
 
-.ubicaciones-buceo-button:hover {
-    background-color: #ff9696;
-    color: white;
-    transform: translateY(-3px);
-}
-
-/* =========================
-   CONTROLES
-========================= */
-
-.ubicaciones-buceo-control {
-    width: 8%;
-    opacity: 1;
-}
-
-.ubicaciones-buceo-control .carousel-control-prev-icon,
-.ubicaciones-buceo-control .carousel-control-next-icon {
-    background-color: rgba(0,0,0,0.4);
-    border-radius: 50%;
-    padding: 30px;
-    background-size: 45%;
-}
-
-/* =========================
-   INDICADORES
-========================= */
-
-.ubicaciones-buceo-indicators {
-    bottom: 25px;
-}
-
-.ubicaciones-buceo-indicators button {
-    width: 12px !important;
-    height: 12px !important;
-    border-radius: 50%;
-    margin: 0 6px !important;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 992px) {
-
-    .ubicaciones-buceo-title {
-        font-size: 3.5rem;
-    }
-
-    .ubicaciones-buceo-description {
-        font-size: 1.1rem;
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    .ubicaciones-buceo-carousel {
-        width: 100%;
-        height: 100vh;
-        border-radius: 0;
-        margin: 0;
-    }
-
-    .ubicaciones-buceo-carousel .carousel-item {
-        height: 100vh;
-    }
-
-    .ubicaciones-buceo-caption {
-        left: 8%;
-        right: 8%;
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .ubicaciones-buceo-title {
-        font-size: 2.7rem;
-    }
-
-    .ubicaciones-buceo-description {
-        font-size: 1rem;
-    }
-
-    .ubicaciones-buceo-button {
-        padding: 14px 28px;
-    }
-
+.carousel-indicators button.active {
+    background-color: #ffd700;
+    transform: scale(1.2);
 }
