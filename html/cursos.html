@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-            <nav class="navbar navbar-expand-lg sticky-top"> <!-- Este es el navbar de la página-->
-        <div class="container-fluid"> 
-           
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg sticky-top"> <!-- Este es el navbar de la página-->
+        <div class="container-fluid">
+
             <a class="navbar-brand" href="#">Mourosub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,6 +38,237 @@
                 </ul>
             </div>
         </div>
-    
+
+
+
+
+
+
+
+    </nav>
+
+        <main class="container-fluid flex-fill mt-4 px-0">
+            <div class="row g-0 h-100">
+                <div class="col-12 h-100">
+                    <div class="p-4 bg-light h-100 d-flex flex-column">
+                        <h1 class="mb-4 text-center">Actividades</h1>
+                        <div class="accordion flex-fill d-flex flex-column" id="accordionModalidades">
+                            <div class="accordion-item d-flex flex-column">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        niños y buceo
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse flex-fill" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionModalidades">
+                                    <div class="accordion-body d-flex flex-column overflow-auto">
+                                        <p><strong>Descripción:</strong> </p>
+                                        <p><strong>Imagen:</strong> <span><img src="" alt=""></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item d-flex flex-column">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Snorkel
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse flex-fill" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionModalidades">
+                                    <div class="accordion-body d-flex flex-column overflow-auto">
+                                        <p><strong>Descripción:</strong> </p>
+                                        <p><strong>Imagen:</strong> <span><img src="" alt=""></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item d-flex flex-column">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Bautismos de Buceo
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse flex-fill"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionModalidades">
+                                    <div class="accordion-body d-flex flex-column overflow-auto">
+                                        <p><strong>Descripción:</strong> </p>
+                                        <p><strong>Imagen:</strong> <span><img src="" alt=""></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item d-flex flex-column">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Club Mourosub
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse flex-fill" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionModalidades">
+                                    <div class="accordion-body d-flex flex-column overflow-auto">
+                                        <p><strong>Descripción:</strong> </p>
+                                        <p><strong>Imagen:</strong> <span><img src="" alt=""></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item d-flex flex-column">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Rutas en barco
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse flex-fill" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionModalidades">
+                                    <div class="accordion-body d-flex flex-column overflow-auto">
+                                        <p><strong>Descripción:</strong> </p>
+                                        <p><strong>Imagen:</strong> <span><img src="" alt=""></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item d-flex flex-column">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Naturaleza y medio ambiente
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse flex-fill" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionModalidades">
+                                    <div class="accordion-body d-flex flex-column overflow-auto">
+                                        <p><strong>Descripción:</strong> </p>
+                                        <p><strong>Imagen:</strong> <span><img src="" alt=""></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item d-flex flex-column">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        Talleres tecnicos
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse flex-fill"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionModalidades">
+                                    <div class="accordion-body d-flex flex-column overflow-auto">
+                                        <div class="container">
+                                            <h1 class="text-center my-4">Ofertas y Packs</h1>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="card">
+                                                        <img src="" class="card-img-top"
+                                                            alt="Imagen del paquete de formación de emergencia">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">PAQUETE (BUNDLE) FORMACIÓN DE
+                                                                EMERGENCIA</h5>
+                                                            <p class="card-text">
+                                                                Este paquete combina los programas Buceador Stress &
+                                                                Rescue y React
+                                                                Right SSI. Aprende reconocer y manejar el estrés,
+                                                                prevenir accidentes y manejar
+                                                                adecuadamente las situaciones de emergencia si ocurren.
+                                                                Recibirás las dos
+                                                                certificaciones Buceador Stress & Rescue SSI y React
+                                                                Right SSI después de finalizar
+                                                                ambos programas del paquete
+                                                                Por favor Consulte los ESTÁNDARES DE FORMACIÓN SSI para
+                                                                obtener información más
+                                                                detallada.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="card">
+                                                        <img src="" class="card-img-top"
+                                                            alt="Imagen del paquete de formación de emergencia">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">PAQUETE (BUNDLE) MASTER DIVER</h5>
+                                                            <p class="card-text">
+                                                                El Master Diver SSI tan popular es el paso final en tu
+                                                                trayectoria del buceo recreativo. El
+                                                                Paquete (Bundle) Kit Digital Master Diver SSI incluye
+                                                                cuatro Kits Digitales de programas de
+                                                                Especialidades SSI y el Kit Digital Buceador Stress &
+                                                                Rescue SSI. Después de finalizar los
+                                                                cinco programas de Especialidad y además tener 50
+                                                                inmersiones en aguas abiertas registradas,
+                                                                recibirás automáticamente la certificación de
+                                                                reconocimiento Master Diver SSI, así como las
+                                                                cinco certificaciones individuales de los programas de
+                                                                Especialidades SSI.
+
+                                                                Por favor Consulte los ESTÁNDARES DE FORMACIÓN SSI para
+                                                                obtener información más detallada.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="card">
+                                                        <img src="" class="card-img-top"
+                                                            alt="Imagen del paquete de formación de emergencia">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">PAQUETE (BUNDLE) ADVANCED OPEN WATER
+                                                                DIVER</h5>
+                                                            <p class="card-text">
+                                                                El Advanced Open Water Diver SSI es la siguiente
+                                                                certificación de reconocimiento en el
+                                                                camino para convertirse en un Master Diver SSI, y
+                                                                incluye cuatro Kits Digitales de programas
+                                                                de Especialidades SSI. Después de completar los cuatro
+                                                                programas de Especialidades SSI que
+                                                                te interesan, además de tener 24 inmersiones
+                                                                registradas, recibirás automáticamente la
+                                                                certificación de reconocimiento Advanced Open Water
+                                                                Diver SSI junto con tus certificaciones
+                                                                de los programas de Especialidades SSI.
+
+                                                                Por favor Consulte los ESTÁNDARES DE FORMACIÓN SSI para
+                                                                obtener información más detallada.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="card">
+                                                        <img src="" class="card-img-top"
+                                                            alt="Imagen del paquete de formación de emergencia">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">PAQUETE (BUNDLE) OPEN WATER DIVER Y
+                                                                AIRE ENRIQUECIDO NITROX</h5>
+                                                            <p class="card-text">
+                                                                Este paquete combina el programa Open Water Diver con la
+                                                                Especialidad Aire Enriquecido
+                                                                Nitrox.
+                                                                Recibirás la certificación Open Water Diver y Aire
+                                                                Enriquecido Nitrox (32% o 40%) después de
+                                                                finalizar los dos programas.
+
+                                                                Por favor Consulte los ESTÁNDARES DE FORMACIÓN SSI para
+                                                                obtener información más detallada.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
