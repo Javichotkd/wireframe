@@ -302,3 +302,11 @@
     background-color: #ffd700;
     transform: scale(1.2);
 }
+
+.color-navbar {
+    background-color: #0B3C5D ; /* Azul oscuro */
+}
+
+.color-body {
+    background-color: #1C7293; /* Azul más claro */
+}
