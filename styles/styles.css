@@ -1,3 +1,76 @@
+:root {
+  --deep-blue: #0B3C5D;
+  --sea-blue: #1E6F8C;
+  --turquoise: #2EC4B6;
+  --white: #FFFFFF;
+  --light-gray: #F4F7F9;
+
+  --accent-orange: #FF6B35;
+  --accent-yellow: #FFD166;
+
+  --water-green: #62B6CB;
+  --soft-green: #A7C957;
+  --sand: #F2E8CF;
+
+  --soft-black: #0F172A;
+  --gray-mid: #6B7280;
+  --gray-border: #E5E7EB;
+
+  /* Derived / convenience */
+  --bg: var(--white);
+  --bg-alt: var(--light-gray);
+  --text: var(--soft-black);
+  --muted: var(--gray-mid);
+
+  --button-primary: var(--turquoise);
+  --button-primary-dark: #26A89E;
+  --button-accent: var(--accent-orange);
+  --button-accent-dark: #E25D2C;
+
+  --glow: rgba(46,196,182,0.18);
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6{ color: var(--deep-blue); margin: 0 0 0.5rem 0; }
+p,li{ color: var(--muted); }
+
+a{ color: var(--sea-blue); text-decoration: none; }
+
+/* Botones y llamadas a la acción */
+button, .btn{
+  background: var(--button-primary);
+  color: var(--white);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover, .btn:hover{ background: var(--button-primary-dark); }
+
+.btn-accent{ background: var(--button-accent); }
+.btn-accent:hover{ background: var(--button-accent-dark); }
+
+.muted{ color: var(--muted); }
+
+.card{ background: var(--bg-alt); border: 1px solid var(--gray-border); border-radius: 10px; }
+
+.border-muted{ border-color: var(--gray-border); }
+
+.text-muted{ color: var(--muted); }
+
+.container{ padding: 1rem; }
+
 .carousel3d { background: var(--bg-alt); }
 
 .c3d {
@@ -7,7 +80,7 @@
   user-select: none;
   touch-action: pan-y;
 }
-
+/*Tamaño/Formato de el carrusel*/
 .c3d__viewport {
   position: relative;
   width: 100%;
